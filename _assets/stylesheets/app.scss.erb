@@ -1,4 +1,5 @@
-// import sass variables
+// import sass stuff
+@import "mixins";
 @import "variables";
 
 // import vendor libs
@@ -16,42 +17,80 @@
 //
 
 #header {
-    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url(<%= asset_path "header.png" %>) no-repeat center center;
-    background-size: cover;
+
+  @include respond(url(<%= asset_path "header-xs.png" %>), 
+                   url(<%= asset_path "header-sm.png" %>), 
+                   url(<%= asset_path "header-md.png" %>), 
+                   url(<%= asset_path "header-lg.png" %>));
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  #gradient {
+    margin: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+  }
 }
 
 #work, #learn, #play {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 
-    .img {
-        position: absolute;
-        height: 100%;
-    }
+  .img {
+    position: absolute;
+    height: 100%;
+  }
+
+  .content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 #work .img {
-    background: url(<%= asset_path "work.jpg" %>) no-repeat center center;
-    background-size: cover;
-    right: 0;
+
+  @include respond(url(<%= asset_path "work-xs.jpg" %>), 
+                   url(<%= asset_path "work-sm.jpg" %>), 
+                   url(<%= asset_path "work-md.jpg" %>), 
+                   url(<%= asset_path "work-lg.jpg" %>));
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  right: 0;
 }
 
 #learn .img {
-    background: url(<%= asset_path "learn.jpg" %>) no-repeat center center;
-    background-size: cover;
+
+  @include respond(url(<%= asset_path "learn-xs.jpg" %>), 
+                   url(<%= asset_path "learn-sm.jpg" %>), 
+                   url(<%= asset_path "learn-md.jpg" %>), 
+                   url(<%= asset_path "learn-lg.jpg" %>));
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
 
 #play .img {
-    background: url(<%= asset_path "play.jpg" %>) no-repeat center center;
-    background-size: cover;
-    right: 0;
+
+  @include respond(url(<%= asset_path "play-xs.jpg" %>), 
+                   url(<%= asset_path "play-sm.jpg" %>), 
+                   url(<%= asset_path "play-md.jpg" %>), 
+                   url(<%= asset_path "play-lg.jpg" %>));
+  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  right: 0;
 }
 
 #footer {
-    border-top: 1px solid #ccc;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background: #f2f2f2;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #f2f2f2;
 }
 
 //
@@ -59,10 +98,10 @@
 //
 
 body {
-    font-weight: 200;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 h1, h2, h3, h4 {
-    margin: 0;
+  margin: 0;
 }

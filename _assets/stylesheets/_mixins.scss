@@ -1,0 +1,17 @@
+@mixin respond($img-xs, $img-sm, $img-md, $img-lg) {
+
+  background-image: $img-xs;
+
+  @media only screen and (min-width: 768px) and (max-width: 992px) {
+    background-image: $img-sm;
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    background-image: $img-md;
+  }
+
+  @media only screen and (min-width: 1200px) {
+    background-image: $img-lg;
+  }
+
+}

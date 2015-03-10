@@ -1,4 +1,14 @@
+title: HanaHaus
+
+baseurl: '/HanaHaus-2.0'
+
 assets:
-  baseurl: /HanaHaus-2.0/assets/
   js_compressor: uglifier
   css_compressor: sass
+
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
