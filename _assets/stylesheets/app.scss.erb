@@ -18,10 +18,10 @@
 
 #header {
 
-  @include respond(url(<%= asset_path "header-xs.png" %>), 
-                   url(<%= asset_path "header-sm.png" %>), 
-                   url(<%= asset_path "header-md.png" %>), 
-                   url(<%= asset_path "header-lg.png" %>));
+  @include respond(url(<%= asset_path "header-xs.jpg" %>), 
+                   url(<%= asset_path "header-sm.jpg" %>), 
+                   url(<%= asset_path "header-md.jpg" %>), 
+                   url(<%= asset_path "header-lg.jpg" %>));
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -86,8 +86,12 @@
   right: 0;
 }
 
-#footer {
+#social {
   border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+#footer {
   padding-top: 20px;
   padding-bottom: 20px;
   background: #f2f2f2;
