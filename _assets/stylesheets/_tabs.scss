@@ -5,13 +5,18 @@
   text-align: center;
   background: #f2f2f2;
   border-bottom: none;
-  padding: 20px 50px;
+  padding: 20px 10px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 
   li {
     a {
       display: inline-block;
       border: none !important;
       background: none;
+      white-space: nowrap;
     }
     a:hover {
       border: none !important;
