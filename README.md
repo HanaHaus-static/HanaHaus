@@ -3,6 +3,7 @@
 ## Develop locally
 
 ```shell
+bundle install
 rake serve
 ```
 
