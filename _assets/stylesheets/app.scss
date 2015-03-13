@@ -18,10 +18,12 @@
 
 #header {
 
-  @include respond(url(<%= asset_path "header-xs.jpg" %>), 
-                   url(<%= asset_path "header-sm.jpg" %>), 
-                   url(<%= asset_path "header-md.jpg" %>), 
-                   url(<%= asset_path "header-lg.jpg" %>));
+  height: 100vh;
+
+  @include respond(url(asset_path("header-xs.jpg")), 
+                   url(asset_path("header-sm.jpg")), 
+                   url(asset_path("header-md.jpg")), 
+                   url(asset_path("header-lg.jpg")));
 
   background-repeat: no-repeat;
   background-position: center center;
@@ -29,6 +31,7 @@
 
   #gradient {
     margin: 0;
+    height: 100vh;
     background: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
   }
 }
@@ -50,10 +53,10 @@
 
 #work .img {
 
-  @include respond(url(<%= asset_path "work-xs.jpg" %>), 
-                   url(<%= asset_path "work-sm.jpg" %>), 
-                   url(<%= asset_path "work-md.jpg" %>), 
-                   url(<%= asset_path "work-lg.jpg" %>));
+  @include respond(url(asset_path("work-xs.jpg")), 
+                   url(asset_path("work-sm.jpg")), 
+                   url(asset_path("work-md.jpg")), 
+                   url(asset_path("work-lg.jpg")));
   
   background-repeat: no-repeat;
   background-position: center center;
@@ -63,10 +66,10 @@
 
 #learn .img {
 
-  @include respond(url(<%= asset_path "learn-xs.jpg" %>), 
-                   url(<%= asset_path "learn-sm.jpg" %>), 
-                   url(<%= asset_path "learn-md.jpg" %>), 
-                   url(<%= asset_path "learn-lg.jpg" %>));
+  @include respond(url(asset_path("learn-xs.jpg")), 
+                   url(asset_path("learn-sm.jpg")), 
+                   url(asset_path("learn-md.jpg")), 
+                   url(asset_path("learn-lg.jpg")));
   
   background-repeat: no-repeat;
   background-position: center center;
@@ -75,10 +78,10 @@
 
 #play .img {
 
-  @include respond(url(<%= asset_path "play-xs.jpg" %>), 
-                   url(<%= asset_path "play-sm.jpg" %>), 
-                   url(<%= asset_path "play-md.jpg" %>), 
-                   url(<%= asset_path "play-lg.jpg" %>));
+  @include respond(url(asset_path("play-xs.jpg")), 
+                   url(asset_path("play-sm.jpg")), 
+                   url(asset_path("play-md.jpg")), 
+                   url(asset_path("play-lg.jpg")));
   
   background-repeat: no-repeat;
   background-position: center center;
