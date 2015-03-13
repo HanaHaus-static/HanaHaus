@@ -1,7 +1,5 @@
 title: HanaHaus
 
-baseurl: '/HanaHaus-2.0'
-
 assets:
   js_compressor: uglifier
   css_compressor: sass
