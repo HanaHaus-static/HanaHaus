@@ -138,3 +138,6 @@ DEPENDENCIES
   sass
   uglifier
   webrick
+
+BUNDLED WITH
+   1.10.4
